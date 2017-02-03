@@ -36,8 +36,8 @@ export default class  ParentComponent extends React.Component {
                 <ul>
                     <li><strong>Fact 1: </strong>Props are read-only</li>
                     <li>if a prop contains an array or a Object (non-primitive value), we can still mutate the value inside that reference. <u>Is that Expected?</u> </li>
-                    <li><strong>Fact 2: </strong>If parent don't pass props, child is expected to take <i>defaultProps</i> value</li>
-                    <li>But in our case looks like the prev mutated value is set as <i>child's defaultProps</i> value on child un-mount. <u>Is that Expected?</u></li>
+                    <li><strong>Fact 2: </strong>If parent don't pass a property for props, child is expected to <b>copy</b> <i>the respective prop from defaultProps</i> value</li>
+                    <li>But in our case looks like they hold red rather copying, hence on child mount back we are getting the value in that ref. <u>Is that Expected?</u></li>
                 </ul>
                 <div style={{padding:'8px'}}>
                     <div style={{padding:'16px'}}>
