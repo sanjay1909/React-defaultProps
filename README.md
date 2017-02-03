@@ -10,3 +10,6 @@
 This repo is to test these facts about **defaultProps**
 1. Props are read-only (For non-primitive?)
 2. If parent don't pass value in props , child is expected to take **fresh defaultProps value**
+
+## Demo Link 
+https://sanjay1909.github.io/React-defaultProps/
